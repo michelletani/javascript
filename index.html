@@ -236,7 +236,6 @@
         <p>Para alterar a formatação de alguma variável, é preciso separar os elementos por '.'</p>
         <p>Exemplo:</p>
         <p class="recuo_1">d.style.backgroud = 'dark'</p>
-
         <h2>Eventos DOM</h2>
         <p>Se trata de tudo o que pode acontecer com o elemento.</p>
         <p>Para exibir diversos parágrafos no JS, é utilizado o +=</p>
@@ -249,27 +248,66 @@
             < p>Você gosta de ${hobby1} e ${hobby2}.
                 < / p>`
         </p>
-
         <h1>Condições</h1>
-        <h2>Condições Simples</h2>
+        <h2>Condição Simples</h2>
         <p>Quando há apenas uma condição. Não há necessidade de utilizar o "else".</p>
-
-        <h2>Condições Composta</h2>
+        <h2>Condição Composta</h2>
         <p>Quando há mais de uma condição.</p>
-
         <h3>Condição Aninhada</h3>
         <p>Dentro de uma "else" pode ter outros "if" e "else".</strong>
         </p>
-
-        <h1>Material de Apoio</h1>
-        <p>
-            <a href="https://developer.mozilla.org/pt-BR/docs/Web/Events">Eventos de Elementos - MDN</a>
-        </p>
+        <h3>Condição Múltipla</h3>
+        <p>Utilizada quando houver mais de duas opções.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">switch (diaSemana) {</p>
+        <p class="recuo_2">case 0:</p>
+        <p class="recuo_3">console.log('Domingo')</p>
+        <p class="recuo_3">break</p>
+        <p class="recuo_2">case 1:</p>
+        <p class="recuo_3">console.log('Segunda')</p>
+        <p class="recuo_3">break</p>
+        <p class="recuo_2">case 2:</p>
+        <p class="recuo_3">console.log('Terça')</p>
+        <p class="recuo_3">break</p>
+        <p class="recuo_2">case 3:</p>
+        <p class="recuo_3">console.log('Quarta')</p>
+        <p class="recuo_3">break</p>
+        <p class="recuo_2">case 4:</p>
+        <p class="recuo_3">console.log('Quinta')</p>
+        <p class="recuo_3">break</p>
+        <p class="recuo_2">case 5:</p>
+        <p class="recuo_3">console.log('Sexta')</p>
+        <p class="recuo_3">break</p>
+        <p class="recuo_2">case 6:</p>
+        <p class="recuo_3">console.log('Sábado')</p>
+        <p class="recuo_3">break</p>
+        <p class="recuo_2">default:</p>
+        <p class="recuo_3">console.log('[ERRO] Dia da semana inválido!')</p>
+        <p class="recuo_1">}</p>
+        <p><strong>Obs.:</strong> É importante utilizar o <em>breake</em>, caso contrário, serão executadas todas as linhas até o final.</p>
+        <h1>Datas e Horas</h1>
+        <p>Para inserir datas e/ou horas atuais, é preciso utilizar o <em>new Date()</em> e em seguida inserir o código necessário.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">var agora = new Date()</p>
+        <p class="recuo_1">var hora = agora.getHours()</p>
+        <p class="recuo_1">var minuto = agora.getMinutes()</p>
+        <p class="recuo_1">console.log(`Agora são ${hora}:${minuto} horas.`)</p>
+        <p class="recuo_1">
+            if (hora
+            < 6) { </p>
+                <p class="recuo_2">console.log( 'Boa madrugada!')</p>
+                <p class="recuo_1">} else if (hora>= 6) {</p>
+                <p class="recuo_2">console.log('Bom dia!')</p>
+                <p class="recuo_1">} else if (hora
+                    <=1 8) { </p>
+                        <p class="recuo_2">console.log( 'Boa tarde!')</p>
+                        <p class="recuo_1">} else { console.log( 'Boa noite!')</p>
+                        <p class="recuo_1">}</p>
+                        <h1>Material de Apoio</h1>
+                        <p>
+                            <a href="https://developer.mozilla.org/pt-BR/docs/Web/Events">Eventos de Elementos - MDN</a>
+                        </p>
     </main>
 </body>
-
-</html>
-
-</html>
 
 </html>
