@@ -1,12 +1,70 @@
 @charset "utf-8";
 * {
-    margin: 0px;
-    padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --cor0: #fffd95;
+    --cor1: #fcf95d;
+    --cor2: #ebe71e;
+    --cor3: #fcf802;
+    --cor4: #e0dd08;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor4));
+    min-height: 150px;
+    padding-top: 40px;
+}
+
+header>h1 {
+    color: #fff;
+    text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.384);
+    text-align: center;
+}
+
+nav {
+    background-color: var(--cor4);
+    text-align: right;
+    margin: 0px;
+    padding: 0px 100px 10px 0px;
+}
+
+nav>a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav>a:hover {
+    background-color: var(--cor2);
+    border-radius: 5px 5px 0px 0px;
+    color: #fff;
+    text-decoration: underline;
+    padding: 10px;
 }
 
 main {
-    margin: 0% 2%;
+    margin: 0px 100px 20px 100px;
+}
+
+footer {
+    padding: 5px;
+    background-color: var(--cor4);
+    font-size: 0.8em;
+    text-align: center;
+    color: #fff;
+}
+
+a {
+    color: var(--cor2);
+}
+
+a:hover {
+    color: var(--cor3);
 }
 
 h1,
@@ -45,10 +103,18 @@ h5 {
 
 p {
     margin: 5px 0px 5px 0px;
-    line-height: 1.7em;
+    line-height: 1.5em;
     text-align: justify;
     background-position: left top;
 }
+
+
+/* ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+}
+
+*/
 
 ul {
     line-height: 1.5em;
@@ -60,12 +126,33 @@ ol {
     padding-left: 40px;
 }
 
+li {
+    padding: 3px 0px;
+    margin-left: 50px;
+}
+
+#borda_personalizada {
+    border: 12px solid transparent;
+    border-image: url('download.png') 50 repeat;
+}
+
+.panel {
+    display: inline-block;
+    background-color: #fafafa;
+    border: 1px solid #b1b1b1;
+    border-radius: 10px;
+    margin: auto;
+    padding: 0px 12px;
+    width: 400px;
+    min-height: 200px;
+}
+
 .recuo_1 {
-    padding-left: 25px;
+    margin-left: 25px;
 }
 
 .recuo_2 {
-    padding-left: 50px;
+    margin-left: 50px;
 }
 
 .recuo_3 {

@@ -10,6 +10,26 @@
 </head>
 
 <body>
+    <header>
+        <h1>JavaScript</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Operadores</a>
+        <a href="#">Tipos Primitivos</a>
+        <a href="#">Transformações</a>
+        <a href="">Formatações</a>
+        <a href="">DOM</a>
+        <a href="">Condições</a>
+        <a href="">Estrutura de Repetição</a>
+        <a href="">Variáveis</a>
+        <a href="">Funções/Funcionalidades</a>
+        <a href="">Propriedades</a>
+        <a href="">Wlementos</a>
+        <a href="">Formatação</a>
+        <a href="">Emojis</a>
+        <a href="">Material de Apoio</a>
+    </nav>
     <main>
         <h1>Operadores</h1>
         <p>Tipos de operadores:</p>
@@ -87,14 +107,14 @@
         <h2>Relacionais</h2>
         <p>Tipos relacionais:</p>
         <ul>
-            <li> > - Maior que</li>
+            <li> &gt; - Maior que</li>
             <li>
-                <- Menor que</li>
-                    <li>>= - Maior ou igual que</li>
-                    <li>
-                        <=- Menor ou igual que</li>
-                            <li>== - Igual</li>
-                            <li>!= - Diferente</li>
+                &lt;- Menor que</li>
+            <li>&gt;= - Maior ou igual que</li>
+            <li>
+                &lt;=- Menor ou igual que</li>
+            <li>== - Igual</li>
+            <li>!= - Diferente</li>
         </ul>
         <p><strong>NOTA: </strong>Todo o resultado de uma operação Relacional é Bouleano, pois o resultado será Verdadeiro ou Falso.</p>
         <h2>Identidade</h2>
@@ -118,13 +138,14 @@
         <p>Exemplo 1:</p>
         <p class="recuo_1">var x = 6</p>
         <p class="recuo_1">var y = 9</p>
-        <p class="recuo_1">x >= y ?'Sim' :'Não'</p>
+        <p class="recuo_1">x &gt;= y ?'Sim' :'Não'</p>
         <p class="recuo_1">Sim</p>
         <p>Exemplo 2:</p>
         <p class="recuo_1">var media = 6</p>
         <p class="recuo_1">var nota = 5</p>
-        <p class="recuo_1">nota >= media ?'Aprovado' :'Reprovado'</p>
+        <p class="recuo_1">nota &gt;= media ?'Aprovado' :'Reprovado'</p>
         <p class="recuo_1">'Reprovado'</p>
+
         <h1>Tipos Primitivos</h1>
         <ul>
             <li>number</li>
@@ -156,6 +177,7 @@
             <li>var n1 = Number.parseFloat(n) - Para números reais (1.3,2.4,3.8 ...)</li>
         </ul>
         <p><strong>Obs.:</strong> Caso possa ser utilizado tanto o número inteiro, quanto o real, pode ser utilizado apenas Number(n).</p>
+
         <h1>Transformações</h1>
         <h2>Transformação de Number para String e vice-versa</h2>
         <h3>Conversão de número para string:</h3>
@@ -163,6 +185,9 @@
             <li>String(n)</li>
             <li>n.toString()</li>
         </ul>
+        <h3>Conversão de string para número:</h3>
+        <p class="recuo_1">var a = Number(n.value)</p>
+
         <h2>Transformação da moeda</h2>
         <p>Para transformar a moeda de acordo com cada país, há o exemplo abaixo:</p>
         <p class="recuo_1">var n1 = 1200.5</p>
@@ -173,6 +198,7 @@
         <p><strong>Obs.:</strong> o 'pt-BR' é a informação de onde a informação está sendo retirada.</p>
         <p><strong>Nota:</strong> Para substituir um termo por outro utiliza-se o código abaixo:</p>
         <p>n1.toFixed(2).replace('.', ',') - <em>R$ 1200,50</em></p>
+
         <h1>Formatações</h1>
         <h2>Formatação de String</h2>
         <p>Pode ser utilizada duas formas, Concatenação e Template String.</p>
@@ -192,6 +218,7 @@
         <p class="recuo_1">document.write(´Olá, ${nome}! Seu nome tem ${nome.leng}´)</p>
         <p class="recuo_1">document.write(´Olá, seu nome em maiúscula é ${nome.toUpperCase()}´)</p>
         <p class="recuo_1">document.write(´Olá, seu nome em maiúscula é ${nome.toLowerCase()}´)</p>
+
         <h1>DOM</h1>
         <p>DOM é um acrônimo para Modelos de Objetos para Documentos:</p>
         <ul>
@@ -240,14 +267,9 @@
         <p>Se trata de tudo o que pode acontecer com o elemento.</p>
         <p>Para exibir diversos parágrafos no JS, é utilizado o +=</p>
         <p>Exemplo:</p>
-        <p class="recuo_1">dados.innerHTML = `
-            < p>Seu nome é ${nome}, e você tem ${idade} anos.
-                < / p>`
-        </p>
-        <p class="recuo_1">dados.innerHTML += `
-            < p>Você gosta de ${hobby1} e ${hobby2}.
-                < / p>`
-        </p>
+        <p class="recuo_1">dados.innerHTML = ` &lt;p&gt;Seu nome é ${nome}, e você tem ${idade} anos. &lt;/p&gt;`</p>
+        <p class="recuo_1">dados.innerHTML += ` &lt;p&gt;Você gosta de ${hobby1} e ${hobby2}. &lt;/p&gt;`</p>
+
         <h1>Condições</h1>
         <h2>Condição Simples</h2>
         <p>Quando há apenas uma condição. Não há necessidade de utilizar o "else".</p>
@@ -285,29 +307,219 @@
         <p class="recuo_3">console.log('[ERRO] Dia da semana inválido!')</p>
         <p class="recuo_1">}</p>
         <p><strong>Obs.:</strong> É importante utilizar o <em>breake</em>, caso contrário, serão executadas todas as linhas até o final.</p>
-        <h1>Datas e Horas</h1>
+
+        <h1>Estrutura de Repetição</h1>
+        <h2>Estrutura de repetição com teste lógico no início</h2>
+        <p>Utilizamos o <em>while</em> para que uma repetição aconteça Enquanto determinada condição for verdadeira.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">var c = 1</p>
+        <p class="recuo_1">while (c &gt;=6 ) { </p>
+        <p class="recuo_2">console.log(`Passo ${c}`)</p>
+        <p class="recuo_2">c++</p>
+        <p class="recuo_1">}</p>
+        <h2>Estrutura de repetição com teste lógico no final</h2>
+        <p>Utilizamos o <em>do</em> e o <em>while</em> para que uma repetição seja feita Enquanto determinada condição for verdadeira.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">var c = 1</p>
+        <p class="recuo_1">do { </p>
+        <p class="recuo_2">console.log(`Passo ${c}`)</p>
+        <p class="recuo_2">c++</p>
+        <p class="recuo_1">} while (c &gt;=6 )</p>
+        <h2>Estrutura de repetição com variável de controle</h2>
+        <p class="recuo_1">for (inicialização ; teste lógico ; incremento) {</p>
+        <p class="recuo_2">console.log(`... ${...}`)</p>
+        <p class="recuo_1">}</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">for (var c = 1; c &gt;=6 ; c++) {</p>
+        <p class="recuo_2">console.log(`Passo ${c}`)</p>
+        <p class="recuo_1">}</p>
+
+        <h1>Variáveis</h1>
+        <h2>Variáveis Simples</h2>
+        <p>Armazenam apenas um valor por vez.</p>
+
+        <h2>Variáveis Compostas</h2>
+        <p>São capazes de armazenar vários valores em uma mesma estrutura.</p>
+        <p>Variável composta = array = vetor</p>
+        <p>Estrutura da array:</p>
+        <p>var n = [ x , x , x ]</p>
+        <img src="imagens/array.png" alt="Estrutura da array" width="500px"><br>
+        <p>Para incluir uma nova variável em determinada posição, sem precisar inserir na array, é utilizado o código <em>n[0] = 0</em>.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">var num = [5 , 8 , 3]</p>
+        <p class="recuo_1">num[3] = 6</p>
+        <p>No exemplo acima a variável foi inserida na quarta posição, ficando da seguinte forma:</p>
+        <img src="imagens/array_inclusao_de_variavel.png" alt="inclusao de variável" width="230px">
+        <p>Para incluir uma nova variável no final da lista, sem precisar inserir na array, é utilizado o código <em>n.push(0)</em>.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">var num = [5 , 8 , 3]</p>
+        <p class="recuo_1">num.push(7)</p>
+        <p>No exemplo acima a variável foi inserida no final da lista, ficando da seguinte forma:</p>
+        <img src="imagens/array_inclusao_de_variavel_no_final.png" alt="inclusao de variável" width="230px">
+        <p>Para verificar quantas veriável há no array, é utilizado o código <em>n.length</em>.</p>
+        <p>Para ordenar as variáveis em ordem crescente, é utilizado o código <em>n.sort()</em>.</p>
+        <p>Para verifcar em qual posição determinada variável está, é utilizado o código: <em>n.indexOf(0)</em>.</p>
+        <p><strong>Obs.:</strong> Caso não tenha o valor indicado, o JS retornará o valor -1.</p>
+        <h2>For in</h2>
+        <p>Para exibir todas as variáveis que há no vetor é utilizado:</p>
+        <p class="recuo_1">var n = [1 , 2 , 3 , 4 , 5]</p>
+        <p class="recuo_1">for (pos in n) {</p>
+        <p class="recuo_2">console.log(`A posição ${pos} tem o valor ${n[pos]}`)</p>
+        <p class="recuo_1">}</p>
+        <p>No exemplo acima lemos: Para todo <em>pos</em> em <em>n</em>.</p>
+        <p>Pode ser utilizada também o <em>for</em>:</p>
+        <p class="recuo_1">for(pos=0 ; pos &lt;n.length ; pos++){</p>
+        <p class="recuo_2">console.log(`A posição ${pos} tem o valor ${n[pos]}`)</p>
+        <p class="recuo_1">{</p>
+
+        <h2>Objeto</h2>
+        <img src="imagens/object.png" alt="" width="800px">
+
+        <h1>Funções / Funcionalidades</h1>
+        <p>São ações executadas assim que são chamadas ou em decorrência de um evento.</p>
+        <p>Uma ação pode receber parâmetros e retornar um resultado.</p>
+        <p>Chamada - </p>
+        <p>Parâmentros - São as entradas.</p>
+        <p>Ação - Todo o processo</p>
+        <p><img src="imagens/funcoes.png" alt="" width="350px">
+            <img src="imagens/funcoes_2.png" alt="" width="350px">
+            <img src="imagens/funcoes_3.png" alt="" width="350px"></p>
+        <p>É possível deixar resultados pré-definidos, para o caso de não ser inserido um valor.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">function somar(n1 = 0, n2 = 0) {</p>
+        <p class="recuo_2">return n1 + n2</p>
+        <p class="recuo_1">}</p>
+        <p class="recuo_1">Ex.1 - console.log(somar(2, 9))</p>
+        <p class="recuo_1">Ex.2 - console.log(somar(2))</p>
+        <p>Ex.1 - Apresentará o resultado: 11.</p>
+        <p>Ex.2 - Apresentará o resultado: 2 (2+0).</p>
+        <p>Pode ser criada uma <em>function</em> dentro de uma variável.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">var v = function (x) {</p>
+        <p class="recuo_2">return x*2</p>
+        <p class="recuo_1">}</p>
+        <p class="recuo_1">console.log(v(5))</p>
+        <p>Apresentará o resultado: 10</p>
+        <h2>Recursividade</h2>
+        <p>Quando a function chama ela mesma.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">function fatorial(n) {</p>
+        <p class="recuo_2">if (n == 1) { </p>
+        <p class="recuo_3">return 1 </p>
+        <p class="recuo_2">} else { </p>
+        <p class="recuo_3">return n * fatorial(n - 1) </p>
+        <p class="recuo_2">} </p>
+        <p class="recuo_1">} </p>
+        <p class="recuo_1">console.log(fatorial(5))</p>
+        <h1>Propriedades</h1>
+        <h2>Datas e Horas</h2>
         <p>Para inserir datas e/ou horas atuais, é preciso utilizar o <em>new Date()</em> e em seguida inserir o código necessário.</p>
         <p>Exemplo:</p>
         <p class="recuo_1">var agora = new Date()</p>
         <p class="recuo_1">var hora = agora.getHours()</p>
         <p class="recuo_1">var minuto = agora.getMinutes()</p>
         <p class="recuo_1">console.log(`Agora são ${hora}:${minuto} horas.`)</p>
-        <p class="recuo_1">
-            if (hora
-            < 6) { </p>
-                <p class="recuo_2">console.log( 'Boa madrugada!')</p>
-                <p class="recuo_1">} else if (hora>= 6) {</p>
-                <p class="recuo_2">console.log('Bom dia!')</p>
-                <p class="recuo_1">} else if (hora
-                    <=1 8) { </p>
-                        <p class="recuo_2">console.log( 'Boa tarde!')</p>
-                        <p class="recuo_1">} else { console.log( 'Boa noite!')</p>
-                        <p class="recuo_1">}</p>
-                        <h1>Material de Apoio</h1>
-                        <p>
-                            <a href="https://developer.mozilla.org/pt-BR/docs/Web/Events">Eventos de Elementos - MDN</a>
-                        </p>
+        <p class="recuo_1">if (hora &lt; 6) { </p>
+        <p class="recuo_2">console.log( 'Boa madrugada!')</p>
+        <p class="recuo_1">} else if (hora&gt;= 6) {</p>
+        <p class="recuo_2">console.log('Bom dia!')</p>
+        <p class="recuo_1">} else if (hora &lt;=18) { </p>
+        <p class="recuo_2">console.log( 'Boa tarde!')</p>
+        <p class="recuo_1">} else { console.log( 'Boa noite!')</p>
+        <p class="recuo_1">}</p>
+
+        <h2>length</h2>
+        <p>Utilizada para verificar o tamanho ou a quantidade de uma string ou de um array.</p>
+        <p>Exemplo 1:</p>
+        <p class="recuo_1">if(senha.length &lt;6) {</p>
+        <p class="recuo_2">console.log('A senha precisa ter pelo menos 6 caractes')</p>
+        <p class="recuo_1">}</p>
+        <p>Exemplo 2:</p>
+        <p class="recuo_1">if (fano.value.length == 0 || Number(fano.value) > ano) {</p>
+        <p class="recuo_2">window.alert('[ERRO] Verufique os dados e tente novamente!')</p>
+        <p class="recuo_1">}</p>
+
+        <h2>Focus</h2>
+        <p>Utilizado para que o campo continue selecionado.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">n.focus()</p>
+
+        <h2>Campo vazio</h2>
+        <p>Para deixar um campo vazio ou "limpar", basta inserir ' '</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">n.value = ' '</p>
+
+        <h2>Buscar palavras</h2>
+        <p>Para verificar se um texto possui uma palavra específica, podemos usar o método includes(), passando como argumento a palavra a ser verificada, que retorna um valor true se encontrar a palavra, e falso se não, lembrando sempre que o método é case
+            sensitive.
+        </p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">let frase = 'Eu quero viver a vida!'</p>
+        <p class="recuo_1">console.log(frase.includes("vida"))</p>
+
+        <h1>Inclusão e seleção de elementos pelo JS</h1>
+        <h2>Inclusão de elementos pelo JS</h2>
+        <p>Para incluir elementos pelo JS é preciso criar uma variável para o elemento e inserir o tipo do elemento entre: (' ')</p>
+        <p>Exemplo 1:</p>
+        <p class="recuo_1">var img = document.createElement('img')</p>
+        <p>Exemplo 2:</p>
+        <p class="recuo_1">let lista = document.createElement('option')</p>
+        <p class="recuo_1">lista.text = `Valor ${n} adicionado.`</p>
+        <p class="recuo_1">lista.value = `num ${n} `</p>
+        <p class="recuo_1">numeros.appendChild(lista)</p>
+
+        <h2>Inclusão de atributos nos elementos pelo JS</h2>
+        <p>Após a criação da variável para o elemento, é necessário indicar o tipo de atributo e sua identificação.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">img.setAttribute('id', 'foto')</p>
+
+        <h2>Seleção de elemento pelo JS</h2>
+        <p>Para selecionar um elemento específico quando há vários elementos desse mesmo tipo, utilizamos [0], [1], e assim por diantes.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">if (var1[0].checked) {</p>
+        <p class="recuo_2">var2 = 'Homem'</p>
+        <p class="recuo_1">}</p>
+        <p class="recuo_1">else if (var1[1].checked) {</p>
+        <p class="recuo_2">var2 = 'Mulher'</p>
+        <p class="recuo_1">}</p>
+
+        <h1>Formatação pelo JS</h1>
+        <p>Caso cada evento tenha uma formatação específica, imagem, cor, etc., é importante especificar qual o item.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">if (hora &gt;= 4 && hora &lt; 12) {</p>
+        <p class="recuo_2">img.src='imagens/manha.png'</p>
+        <p class="recuo_2">document.body.style.background='#E6D5AB'</p>
+        <p class="recuo_1">} else if (hora>= 12 && hora &gt;=18) { </p>
+        <p class="recuo_2">img.src='imagens/tarde.png'</p>
+        <p class="recuo_2">document.body.style.background='#FAAA41'</p>
+        <p class="recuo_1">} else {</p>
+        <p class="recuo_2">img.src='imagens/noite.png'</p>
+        <p class="recuo_2">document.body.style.background='#648096'</p>
+        <p class="recuo_1">}</p>
+
+        <h1>Emojis</h1>
+        <p>Para inserir o emoji, é preciso substituir U+ por \u e deixar restante do código entre {}.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">De: U+1F600</p>
+        <p class="recuo_1">Para: \u{1F600}</p>
+
+        <h1>Material de Apoio</h1>
+        <ul>
+            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/Events">Eventos de Elementos - MDN</a></li>
+            <li><a href="https://www.dm.ufscar.br/~waldeck/curso/html/apend/tabcod.html">Tabela de Códigos Especiais</a></li>
+            <li><a href="https://unicode.org/emoji/charts/full-emoji-list.html">Lista de emojis</a></li>
+        </ul>
     </main>
 </body>
+
+</html>
+
+</html>
+
+</html>
+
+</html>
+
+</html>
 
 </html>
